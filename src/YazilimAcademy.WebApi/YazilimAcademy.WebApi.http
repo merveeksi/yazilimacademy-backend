@@ -1,0 +1,6 @@
+@YazilimAcademy.WebApi_HostAddress = http://localhost:5051
+
+GET {{YazilimAcademy.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
