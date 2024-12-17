@@ -1,11 +1,12 @@
 using System;
 using MediatR;
 using YazilimAcademy.Application.Common.Interfaces;
+using YazilimAcademy.Application.Common.Models.Responses;
 using YazilimAcademy.Domain.Entities;
 
 namespace YazilimAcademy.Application.Features.Categories.Commands.Create;
 
-public sealed class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, Guid>
+public sealed class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, ResponseDto<Guid>>
 {
     private readonly IApplicationDbContext _dbContext;
 
@@ -14,7 +15,7 @@ public sealed class CreateCategoryCommandHandler : IRequestHandler<CreateCategor
         _dbContext = dbContext;
     }
 
-    public async Task<Guid> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
+    public async Task<ResponseDto<Guid>> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
     {
         var category = Category.Create(request.Name, request.Description);
 
@@ -22,6 +23,6 @@ public sealed class CreateCategoryCommandHandler : IRequestHandler<CreateCategor
 
         await _dbContext.SaveChangesAsync(cancellationToken);
 
-        return category.Id;
+        return ResponseDto<Guid>.Success(category.Id, "Kategori başarıyla oluşturuldu.");
     }
 }
