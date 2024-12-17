@@ -3,7 +3,7 @@ using YazilimAcademy.Domain.Common;
 
 namespace YazilimAcademy.Domain.Entities;
 
-public class CourseSection : EntityBase
+public sealed class CourseSection : EntityBase
 {
     public Guid CourseId { get; set; }
     public Course Course { get; set; }

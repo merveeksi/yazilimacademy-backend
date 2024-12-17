@@ -3,7 +3,7 @@ using YazilimAcademy.Domain.Enums;
 
 namespace YazilimAcademy.Domain.Entities;
 
-public class CourseLecture : EntityBase
+public sealed class CourseLecture : EntityBase
 {
     public Guid SectionId { get; set; }
     public CourseSection Section { get; set; }
