@@ -3,7 +3,7 @@ using YazilimAcademy.Domain.Enums;
 
 namespace YazilimAcademy.Domain.Entities;
 
-public class Course : EntityBase
+public sealed class Course : EntityBase
 {
     public string Title { get; private set; }
     public string? SubTitle { get; private set; }

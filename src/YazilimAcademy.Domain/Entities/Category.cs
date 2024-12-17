@@ -2,7 +2,7 @@ using YazilimAcademy.Domain.Common;
 
 namespace YazilimAcademy.Domain.Entities;
 
-public class Category : EntityBase
+public sealed class Category : EntityBase
 {
     public string Name { get; private set; }
     public string? Description { get; private set; }

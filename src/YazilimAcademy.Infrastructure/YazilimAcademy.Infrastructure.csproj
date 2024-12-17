@@ -10,4 +10,8 @@
     <ProjectReference Include="..\YazilimAcademy.Application\YazilimAcademy.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Persistence\Dapper\" />
+  </ItemGroup>
+
 </Project>
