@@ -1,6 +1,6 @@
-# Yazilim Academy Backend
+# Yazılım Academy Backend
 
-A robust backend solution for the Yazilim Academy platform built with .NET using Clean Architecture principles.
+A robust backend solution for the Yazılım Academy platform built with .NET using Clean Architecture principles.
 
 ## 🏗️ Architecture
 
