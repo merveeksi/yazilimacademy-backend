@@ -10,8 +10,6 @@ public class Category : EntityBase
 
     public static Category Create(string name, string? description)
     {
-
-
         return new Category
         {
             Id = Guid.CreateVersion7(),
