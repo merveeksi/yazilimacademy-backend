@@ -1,9 +1,6 @@
-using System;
-using YazilimAcademy.Domain.Common;
-
 namespace YazilimAcademy.Domain.Entities;
 
-public sealed class CourseCategory : EntityBase
+public sealed class CourseCategory
 {
     public Guid CourseId { get; set; }
     public Course Course { get; set; }
