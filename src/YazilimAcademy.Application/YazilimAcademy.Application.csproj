@@ -18,7 +18,41 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Categories\Queries\GetById\" />
+    <Folder Include="Features\Cities\Queries\GetAll\" />
+    <Folder Include="Features\Cities\Queries\GetById\" />
+    <Folder Include="Features\Countries\Commands\Create\" />
+    <Folder Include="Features\Countries\Queries\GetAll\" />
+    <Folder Include="Features\Countries\Queries\GetById\" />
+    <Folder Include="Features\CourseCategories\Commands\Create\" />
+    <Folder Include="Features\CourseCategories\Queries\GetAll\" />
+    <Folder Include="Features\CourseCategories\Queries\GetById\" />
+    <Folder Include="Features\CourseComments\Commands\Create\" />
+    <Folder Include="Features\CourseComments\Queries\GetAll\" />
+    <Folder Include="Features\CourseComments\Queries\GetById\" />
+    <Folder Include="Features\CourseInstructors\Commands\Create\" />
+    <Folder Include="Features\CourseInstructors\Queries\GetAll\" />
+    <Folder Include="Features\CourseInstructors\Queries\GetById\" />
+    <Folder Include="Features\CourseLectureResources\Commands\Create\" />
+    <Folder Include="Features\CourseLectureResources\Queries\GetAll\" />
+    <Folder Include="Features\CourseLectureResources\Queries\GetById\" />
+    <Folder Include="Features\CourseLectures\Commands\Create\" />
+    <Folder Include="Features\CourseLectures\Queries\GetAll\" />
+    <Folder Include="Features\CourseLectures\Queries\GetById\" />
+    <Folder Include="Features\CourseSections\Commands\Create\" />
+    <Folder Include="Features\CourseSections\Queries\GetAll\" />
+    <Folder Include="Features\CourseSections\Queries\GetById\" />
+    <Folder Include="Features\Courses\Commands\Create\" />
+    <Folder Include="Features\Courses\Queries\GetAll\" />
+    <Folder Include="Features\Courses\Queries\GetById\" />
+    <Folder Include="Features\InstructorSocialMediaLinks\Commands\Create\" />
+    <Folder Include="Features\InstructorSocialMediaLinks\Queries\GetAll\" />
+    <Folder Include="Features\InstructorSocialMediaLinks\Queries\GetById\" />
+    <Folder Include="Features\Instructors\Commands\Create\" />
+    <Folder Include="Features\Instructors\Queries\GetAll\" />
+    <Folder Include="Features\Instructors\Queries\GetById\" />
+    <Folder Include="Features\Users\Commands\Create\" />
+    <Folder Include="Features\Users\Queries\GetAll\" />
+    <Folder Include="Features\Users\Queries\GetById\" />
   </ItemGroup>
 
 </Project>

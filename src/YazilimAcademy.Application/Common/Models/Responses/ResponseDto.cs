@@ -1,4 +1,5 @@
 using YazilimAcademy.Application.Common.Models.Errors;
+using YazilimAcademy.Application.Features.Cities.Queries.GetById;
 
 namespace YazilimAcademy.Application.Common.Models.Responses;
 
@@ -20,7 +21,7 @@ public sealed record ResponseDto<T>
     public static ResponseDto<T> Success(T data, string message)
         => new(data, message, true);
 
-    public static ResponseDto<T?> Success(string message)
+    public static ResponseDto<T?> Success(string? message)
         => new(default, message, true);
 
     public static ResponseDto<T> Error(string message, List<ValidationError>? validationErrors = null)

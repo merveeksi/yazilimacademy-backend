@@ -1,4 +1,3 @@
-using System;
 using MediatR;
 using YazilimAcademy.Application.Common.Interfaces;
 using YazilimAcademy.Application.Common.Models.Responses;
